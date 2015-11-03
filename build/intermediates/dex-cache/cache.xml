@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="T:\LaptopUser\Desktop\IC-Shop\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="T:\LaptopUser\Desktop\IC-Shop\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-3644da66ab2dc83588a4e23955d34cc4cc5e746d.jar" />
+    </item>
+    <item
+        jar="T:\LaptopUser\Desktop\IC-Shop\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="T:\LaptopUser\Desktop\IC-Shop\app\build\intermediates\pre-dexed\debug\classes-13a2c1800c6d28470240cfd74dffcc0a7e1d147b.jar" />
+    </item>
+    <item
+        jar="C:\Users\LaptopUser\.gradle\caches\modules-2\files-2.1\com.readystatesoftware.sqliteasset\sqliteassethelper\2.0.1\d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f\sqliteassethelper-2.0.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f">
+        <dex dex="T:\LaptopUser\Desktop\IC-Shop\app\build\intermediates\pre-dexed\debug\sqliteassethelper-2.0.1-a4998a29f48a066a1e9a23e51ab36c37b9731af0.jar" />
+    </item>
+    <item
+        jar="C:\Users\LaptopUser\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="T:\LaptopUser\Desktop\IC-Shop\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-dfeebccdb1eb37865ee2985ddc4ccd04077e3976.jar" />
+    </item>
+    <item
+        jar="T:\LaptopUser\Desktop\IC-Shop\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="T:\LaptopUser\Desktop\IC-Shop\app\build\intermediates\pre-dexed\debug\classes-65863c566596b4e6ef7732e86f038f95b7d18769.jar" />
+    </item>
+
+</items>
