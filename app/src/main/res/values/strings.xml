@@ -6,10 +6,12 @@
     <string name="title_activity_brand_list">Brand List</string>
     <string name="title_activity_Category_list">Category List</string>
     <string name="action_Brand">Brand List</string>
+    <string name="action_Store">Store List</string>
     <string name="action_Category">category List</string>
     <string name="title_activity_brand_stores">BrandStoresActivity</string>
     <string name="title_activity_category_search">CategorySearchActivity</string>
     <string name="title_activity_store_detail">StoreDetailActivity</string>
     <string name="title_activity_category_expand">CategoryExpandActivity</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_store_list">store_list</string>
 </resources>
