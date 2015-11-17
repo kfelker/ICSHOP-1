@@ -31,7 +31,8 @@
         android:textColor="#ffffff"
         android:layout_alignTop="@+id/Brand"
         android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2" />
+        android:layout_alignStart="@+id/button2"
+        android:onClick="@string/action_Category" />
 
     <EditText
         android:layout_width="wrap_content"

@@ -10,11 +10,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Select a Brand to view stores that carry the brand."
+        android:text="Find Stores that Carry a Brand"
         android:id="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-         />
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:paddingBottom="7dp" />
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +26,11 @@
         android:drawSelectorOnTop="false"
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:choiceMode="singleChoice"
+        android:background="#ff3333"
+        android:divider="#ffffff"
+        android:dividerHeight="5dp" />
 
 
 
