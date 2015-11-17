@@ -44,7 +44,7 @@ public class StoreListActivity extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(), BrandStoresActivity.class);
                 // sending data to new activity
                 i.putExtra("storeID", strid);
-                i.putExtra("storeName", strStore);
+                i.putExtra("BusinessName", strStore);
                 startActivity(i);
 
             }
