@@ -19,12 +19,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/MainCatSpinner"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:background="#ff3333"
+        android:clickable="false"
+        android:paddingBottom="5dp"/>
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/list"
-        tools:listitem="@android:layout/simple_list_item_1"/>
+        tools:listitem="@android:layout/simple_list_item_1"
+        android:background="#ff3333"
+        android:divider="#ffffff"
+        android:dividerHeight="5dp" />
 
 </LinearLayout>
