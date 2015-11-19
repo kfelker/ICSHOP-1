@@ -19,13 +19,20 @@ public class MainActivity extends AppCompatActivity {
                startActivity(new Intent(MainActivity.this, BrandListActivity.class));
            }
        });
-        findViewById(R.id.button4).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.allBrands).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, StoreListActivity.class));
+                startActivity(new Intent(MainActivity.this, BrandListActivity.class));
             }
         });
-
+        /*
+        findViewById(R.id.List).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ShoppingListActivity.class));
+            }
+        });
+        */
     }
 
     @Override

@@ -39,7 +39,9 @@
         android:textIsSelectable="true"
         android:textSize="27dp"
         android:textStyle="bold"
-        android:layout_alignTop="@+id/headertext"
+        android:layout_below="@+id/headertext"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:visibility="invisible" />
 </RelativeLayout>
