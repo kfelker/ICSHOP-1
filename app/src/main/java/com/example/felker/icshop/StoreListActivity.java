@@ -41,7 +41,7 @@ public class StoreListActivity extends AppCompatActivity {
                 String strid = String.valueOf(clickedObject.getID());
                 String strStore = clickedObject.getName();
                 // Launching new Activity on selecting single List Item
-                Intent i = new Intent(getApplicationContext(), BrandStoresActivity.class);
+                Intent i = new Intent(getApplicationContext(), StoreDetailActivity.class);
                 // sending data to new activity
                 i.putExtra("storeID", strid);
                 i.putExtra("BusinessName", strStore);
