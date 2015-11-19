@@ -93,8 +93,6 @@
         android:layout_alignStart="@+id/button3"
         android:layout_alignRight="@+id/button3"
         android:layout_alignEnd="@+id/button3"
-        android:focusableInTouchMode="false"
-        android:enabled="false"
         android:textColor="#000000"
         android:onClick="@string/title_activity_store_list" />
 
