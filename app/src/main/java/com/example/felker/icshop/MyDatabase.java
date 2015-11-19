@@ -60,7 +60,7 @@ public class MyDatabase extends SQLiteAssetHelper {
         SQLiteDatabase db = getReadableDatabase();
         SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
 
-        String[] sqlSelect = {"0 _id", "ID", "BusinessName"};
+        String[] sqlSelect = {"ID", "BusinessName", "Phone"};
         String sqlTables = "Business";
         qb.setTables(sqlTables);
         Cursor c = qb.query(db, sqlSelect, null, null,
