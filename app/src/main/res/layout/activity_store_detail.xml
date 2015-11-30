@@ -15,7 +15,10 @@
         android:id="@+id/textViewStore"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:paddingBottom="7dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,7 +28,9 @@
         android:id="@+id/textViewPhone"
         android:layout_below="@+id/textViewStore"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="22dp"
+       />
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,7 +40,8 @@
         android:id="@+id/textViewHours"
         android:layout_below="@+id/textViewPhone"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="26dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,7 +51,8 @@
         android:id="@+id/textViewAddress"
         android:layout_below="@+id/textViewHours"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="22dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -56,7 +63,10 @@
         android:layout_below="@+id/textViewAddress"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="63dp" />
+        android:layout_marginTop="63dp"
+        android:textSize="26dp"
+        android:textStyle="bold"/>
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -66,7 +76,9 @@
         android:id="@+id/textViewBrands"
         android:layout_below="@+id/textViewBrandLabel"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="#ff3333"
+        android:textColor="#ffffff" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -77,7 +89,9 @@
         android:layout_below="@+id/textViewBrands"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="59dp" />
+        android:layout_marginTop="59dp"
+        android:textSize="26dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -87,5 +101,7 @@
         android:id="@+id/textViewCategories"
         android:layout_below="@+id/textViewCategoryLabel"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="#ff3333"
+        android:textColor="#ffffff" />
 </RelativeLayout>
