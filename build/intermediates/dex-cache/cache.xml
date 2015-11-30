@@ -2,39 +2,39 @@
 <items version="2" >
 
     <item
-        jar="/Users/yanghong/.gradle/caches/modules-2/files-2.1/com.readystatesoftware.sqliteasset/sqliteassethelper/2.0.1/d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f/sqliteassethelper-2.0.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f">
-        <dex dex="/Users/yanghong/AndroidStudioProjects/ICSHOP/app/build/intermediates/pre-dexed/debug/sqliteassethelper-2.0.1-021b0736ca2be5c2d2c93bc30fed3d7fa178647a.jar" />
-    </item>
-    <item
-        jar="/Users/yanghong/AndroidStudioProjects/ICSHOP/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="/Users/yanghong/AndroidStudioProjects/ICSHOP/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-93e61c321d9fdaac0d0ba74f89fdaabb8a72aa5f.jar" />
-    </item>
-    <item
-        jar="/Users/yanghong/AndroidStudioProjects/ICSHOP/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jar="/Users/yanghong/AndroidStudioProjects/new/ICSHOP/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="/Users/yanghong/AndroidStudioProjects/ICSHOP/app/build/intermediates/pre-dexed/debug/classes-fe35c93b575e4a4f0a1e40332bc4df935075283e.jar" />
-    </item>
-    <item
-        jar="/Users/yanghong/AndroidStudioProjects/ICSHOP/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="/Users/yanghong/AndroidStudioProjects/ICSHOP/app/build/intermediates/pre-dexed/debug/classes-6c3df62d43c9ce647677b78cf2d83cfb1b270ba0.jar" />
+        <dex dex="/Users/yanghong/AndroidStudioProjects/new/ICSHOP/app/build/intermediates/pre-dexed/debug/classes-3fce0bb6bfb80d568f0f823050101f111ee5889a.jar" />
     </item>
     <item
         jar="/Users/yanghong/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="/Users/yanghong/AndroidStudioProjects/ICSHOP/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-ea63c3876813cb0e6b86f2eb018ec256b28edbae.jar" />
+        <dex dex="/Users/yanghong/AndroidStudioProjects/new/ICSHOP/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-ea63c3876813cb0e6b86f2eb018ec256b28edbae.jar" />
+    </item>
+    <item
+        jar="/Users/yanghong/.gradle/caches/modules-2/files-2.1/com.readystatesoftware.sqliteasset/sqliteassethelper/2.0.1/d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f/sqliteassethelper-2.0.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f">
+        <dex dex="/Users/yanghong/AndroidStudioProjects/new/ICSHOP/app/build/intermediates/pre-dexed/debug/sqliteassethelper-2.0.1-021b0736ca2be5c2d2c93bc30fed3d7fa178647a.jar" />
+    </item>
+    <item
+        jar="/Users/yanghong/AndroidStudioProjects/new/ICSHOP/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/yanghong/AndroidStudioProjects/new/ICSHOP/app/build/intermediates/pre-dexed/debug/classes-b861830ce1266f076daa4ad31765b6ea9d30f7d1.jar" />
+    </item>
+    <item
+        jar="/Users/yanghong/AndroidStudioProjects/new/ICSHOP/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/yanghong/AndroidStudioProjects/new/ICSHOP/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-ab50c17d7cb2566dbcf89fe7414908b20494ec81.jar" />
     </item>
 
 </items>

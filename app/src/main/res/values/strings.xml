@@ -14,4 +14,6 @@
     <string name="title_activity_category_expand">CategoryExpandActivity</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_store_list">store_list</string>
+
+
 </resources>
