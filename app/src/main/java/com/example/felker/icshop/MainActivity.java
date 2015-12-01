@@ -25,12 +25,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, StoreListActivity.class));
             }
         });
-        findViewById(R.id.advancedSearchButton).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, StoreListActivity.class));
-            }
-        });
         findViewById(R.id.viewMapButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
