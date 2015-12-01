@@ -14,7 +14,7 @@
         android:id="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="26dp"
+        android:textSize="24dp"
         android:textStyle="bold"
         android:paddingBottom="7dp" />
     <ListView

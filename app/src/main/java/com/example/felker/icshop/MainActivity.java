@@ -13,18 +13,37 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       findViewById(R.id.Brand).setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               startActivity(new Intent(MainActivity.this, BrandListActivity.class));
-           }
-       });
-        findViewById(R.id.allBrands).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.allBrandsButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, BrandListActivity.class));
             }
         });
+        findViewById(R.id.allStoresButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, StoreListActivity.class));
+            }
+        });
+        findViewById(R.id.advancedSearchButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, StoreListActivity.class));
+            }
+        });
+        findViewById(R.id.shopByCategoryIdButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,CategorySearchActivity.class));
+            }
+        });
+        findViewById(R.id.shopByCategoryIdButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,CategorySearchActivity.class));
+            }
+        });
+
         /*
         findViewById(R.id.List).setOnClickListener(new View.OnClickListener() {
             @Override

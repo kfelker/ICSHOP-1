@@ -18,7 +18,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        />
+        android:layout_marginBottom="5dp" />
 
     <TableLayout
         android:layout_width="match_parent"
@@ -27,7 +27,6 @@
         android:gravity="center_horizontal"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_above="@+id/allBrands"
         android:id="@+id/tableLayout"
         android:divider="#ffffff"
         android:dividerPadding="2dp">
@@ -36,24 +35,28 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_horizontal"
-            android:contextClickable="false"
             android:divider="#ffffff"
-            android:baselineAligned="false">
+            android:baselineAligned="false"
+            android:showDividers="beginning|middle|end"
+            android:dividerPadding="2dp"
+            android:paddingBottom="4dp">
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="New Button"
-                android:id="@+id/button"
+                android:text="Advanced Search"
+                android:id="@+id/advancedSearchButton"
                 android:layout_column="0"
-                android:background="#ff3333"/>
+                android:background="#ff3333"
+                android:layout_marginRight="2dp" />
 
             <Button
                 android:layout_width="160dp"
                 android:layout_height="160dp"
-                android:text="New Button"
-                android:id="@+id/button2"
+                android:text="SHOP BY CATEGORY"
+                android:id="@+id/shopByCategoryIdButton"
                 android:layout_column="1"
-                android:background="#ff3333" />
+                android:background="#ff3333"
+                android:layout_marginLeft="2dp" />
         </TableRow>
 
         <TableRow
@@ -63,56 +66,62 @@
             <Button
                 android:layout_width="160dp"
                 android:layout_height="160dp"
-                android:text="New Button"
-                android:id="@+id/button3"
+                android:text="VIEW MAP"
+                android:id="@+id/viewMapButton"
                 android:layout_column="0"
-                android:background="#ff3333"/>
+                android:background="#ff3333"
+                android:layout_marginRight="2dp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="160dp"
-                android:text="New Button"
-                android:id="@+id/button5"
+                android:text="Shopping List"
+                android:id="@+id/shoppingListButton"
                 android:layout_column="1"
-                android:background="#ff3333"/>
+                android:background="#ff3333"
+                android:layout_marginLeft="2dp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="VIEW ALL BRANDS"
-                android:id="@+id/allBrands"
+                android:id="@+id/allBrandsButton"
                 android:onClick="@string/title_activity_brand_list"
                 android:nestedScrollingEnabled="false"
-                android:layout_above="@+id/button4"
+                android:layout_above="@+id/allStoresButton"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:layout_column="0"
-                android:layout_span="2" />
+                android:layout_span="2"
+                android:layout_marginTop="5dp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="VIEW ALL STORES"
-                android:id="@+id/button4"
+                android:id="@+id/allStoresButton"
                 android:textColor="#000000"
                 android:onClick="@string/title_activity_store_list"
                 android:clickable="true"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_column="0"
-                android:layout_span="2" />
+                android:layout_span="2"
+                android:layout_marginTop="5dp" />
         </TableRow>
     </TableLayout>
 
