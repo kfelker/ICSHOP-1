@@ -68,6 +68,12 @@
             android:name=".InProgress"
             android:label="@string/title_activity_in_progress" >
         </activity>
+        <activity
+        android:name=".SearchActivity"
+        android:label="@string/title_activity_search"
+            android:parentActivityName=".MainActivity" >
+    </activity>
+
     </application>
 
 </manifest>
