@@ -64,6 +64,10 @@
             android:name=".StoreListActivity"
             android:label="@string/title_activity_store_list" >
         </activity>
+        <activity
+            android:name=".InProgress"
+            android:label="@string/title_activity_in_progress" >
+        </activity>
     </application>
 
 </manifest>

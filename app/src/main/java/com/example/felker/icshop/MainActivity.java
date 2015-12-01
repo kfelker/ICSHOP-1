@@ -31,16 +31,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, StoreListActivity.class));
             }
         });
-        findViewById(R.id.shopByCategoryIdButton).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.viewMapButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,CategorySearchActivity.class));
+                startActivity(new Intent(MainActivity.this,InProgress.class));
             }
         });
         findViewById(R.id.shopByCategoryIdButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,CategorySearchActivity.class));
+            }
+        });
+        findViewById(R.id.shoppingListButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,InProgress.class));
             }
         });
 
