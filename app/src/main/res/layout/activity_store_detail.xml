@@ -17,7 +17,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="28dp"
+        android:textSize="26dp"
         android:textStyle="bold"
         android:paddingBottom="7dp" />
 
@@ -31,7 +31,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textSize="14dp"
-       />
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -51,9 +51,7 @@
         android:text="Medium Text"
         android:id="@+id/textViewAddress"
         android:textSize="14dp"
-        android:paddingLeft="8dp"
-        android:layout_below="@+id/textViewStore"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/textViewHours" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -65,7 +63,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="63dp"
-        android:textSize="26dp"
+        android:textSize="24dp"
         android:textStyle="bold"
         android:paddingTop="7dp" />
 
@@ -92,8 +90,8 @@
         android:layout_below="@+id/textViewBrands"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="59dp"
-        android:textSize="26dp"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
         android:textStyle="bold"
         android:paddingTop="5dp" />
 
@@ -114,11 +112,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView2"
+        android:src="@drawable/ic_action_sample"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/textViewStore"
         android:layout_alignBottom="@+id/textViewBrandLabel"
-        android:layout_toRightOf="@+id/textViewStore"
-        android:src="@drawable/ic_action_sample"
-        android:layout_below="@+id/textViewAddress" />
+        android:layout_toEndOf="@+id/textViewHours"
+        android:layout_toRightOf="@+id/textViewHours" />
 </RelativeLayout>

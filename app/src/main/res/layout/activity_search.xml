@@ -17,7 +17,7 @@ tools:context="com.example.felker.icshop.SearchActivity">
     android:layout_alignParentTop="true"
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
-    android:background="@drawable/back" />
+    />
 
 <Button
     android:layout_width="wrap_content"
