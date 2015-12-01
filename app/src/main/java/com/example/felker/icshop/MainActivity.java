@@ -28,13 +28,13 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.advancedSearchButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, StoreListActivity.class));
+                startActivity(new Intent(MainActivity.this, SearchActivity.class));
             }
         });
         findViewById(R.id.viewMapButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,InProgress.class));
+                startActivity(new Intent(MainActivity.this, InProgress.class));
             }
         });
         findViewById(R.id.shopByCategoryIdButton).setOnClickListener(new View.OnClickListener() {
