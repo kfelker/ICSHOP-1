@@ -22,7 +22,7 @@ tools:context="com.example.felker.icshop.SearchActivity">
 <Button
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Find Brands"
+    android:text="Search"
     android:id="@+id/buttonBrandSearch"
     android:layout_marginTop="65dp"
     android:layout_below="@+id/textViewSearch"

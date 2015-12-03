@@ -44,11 +44,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Advanced Search"
+
                 android:id="@+id/advancedSearchButton"
                 android:layout_column="0"
                 android:background="#ff3333"
                 android:layout_marginRight="2dp"
-                android:gravity="center" />
+                android:gravity="center"
+                android:clickable="true"
+                android:enabled="true" />
 
             <Button
                 android:layout_width="160dp"
