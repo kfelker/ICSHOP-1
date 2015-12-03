@@ -39,7 +39,7 @@ public class BrandStoresActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
         TextView Brand = (TextView) this.findViewById(R.id.headertext);
-        Brand.setText("Stores for:" + strBrand);
+        Brand.setText("Stores for: " + strBrand);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
