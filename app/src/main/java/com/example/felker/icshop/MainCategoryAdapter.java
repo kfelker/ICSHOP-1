@@ -10,9 +10,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * Created by Felker on 10/11/2015.
- */
 public class MainCategoryAdapter extends ArrayAdapter<MainRetailCategory> {
     private Context context;
     private List<MainRetailCategory> mainCatList;
