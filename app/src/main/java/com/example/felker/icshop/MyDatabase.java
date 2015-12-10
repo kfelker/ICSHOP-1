@@ -109,6 +109,31 @@ public class MyDatabase extends SQLiteAssetHelper {
         c.close();
         return Stores;
     }
+    public List<Store> getStoresByCategory(String SubCatID) {
+        List<Store> Stores = new ArrayList<Store>();
+
+        SQLiteDatabase db = getReadableDatabase();
+        SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
+
+        //String[] sqlSelect = {"0 _id", "ID", "BusinessName","Address","Phone","Hours"};
+        //String sqlTables = "Business";
+
+        String sqlState = "SELECT Business.ID, Business.BusinessName, Business.Phone" +
+                " FROM Business INNER JOIN (ProductCategory INNER JOIN [Business-ProductCategory] ON ProductCategory.ID = [Business-ProductCategory].ProductCategoryID) ON Business.ID = [Business-ProductCategory].BusinessID" +
+                " WHERE (((ProductCategory.ID)=?))";
+
+        Cursor c = db.rawQuery(sqlState, new String[]{SubCatID});
+
+        c.moveToFirst();
+        while (!c.isAfterLast()) {
+            Store store = cursorToStore(c);
+            Stores.add(store);
+            c.moveToNext();
+        }
+        // make sure to close the cursor
+        c.close();
+        return Stores;
+    }
 
     private Store cursorToStore(Cursor cursor) {
         Store store = new Store();

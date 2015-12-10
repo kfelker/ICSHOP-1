@@ -15,6 +15,9 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_store_list">store_list</string>
     <string name="title_activity_in_progress">InProgress</string>
+    <string name="title_activity_store_by_category">StoreByCategory</string>
+    <string name="title_activity_categories_by_store">CategoriesByStoreActivity</string>
+    <string name="title_activity_category_by_stores">CategoryByStoresActivity</string>
 
 
 </resources>

@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BrandStoresActivity extends AppCompatActivity {
+public class CategoryByStoresActivity extends AppCompatActivity {
     private List<Store> Stores = new ArrayList<Store>();
     private MyDatabase db;
 
@@ -22,16 +22,16 @@ public class BrandStoresActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_brand_stores);
 
-       Intent i= getIntent();
-       String id = i.getStringExtra("brandID");
-       String strBrand = i.getStringExtra("brandName");
+        Intent i= getIntent();
+        String id = i.getStringExtra("SubRetailID");
+        String strcate = i.getStringExtra("SubCatName");
 
         //Toast.makeText(getApplicationContext(), id,
-            //    Toast.LENGTH_LONG).show();
+        //    Toast.LENGTH_LONG).show();
 
 
         db = new MyDatabase(this);
-      Stores = db.getStoresByBrand(id); // you would not typically call this on the main thread
+        Stores = db.getStoresByCategory(id); // you would not typically call this on the main thread
 
         StoresListAdapter adapter = new StoresListAdapter(this, Stores);
 
@@ -39,7 +39,7 @@ public class BrandStoresActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
         TextView Brand = (TextView) this.findViewById(R.id.headertext);
-        Brand.setText("Stores for: " + strBrand);
+        Brand.setText("Stores for: " + strcate);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,

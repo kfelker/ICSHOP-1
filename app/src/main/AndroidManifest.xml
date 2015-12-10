@@ -24,6 +24,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.felker.icshop.MainActivity" />
         </activity>
+
         <activity
             android:name=".BrandStoresActivity"
             android:label="@string/title_activity_brand_stores"
@@ -32,6 +33,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.felker.icshop.BrandListActivity" />
         </activity>
+
         <activity
             android:name=".CategorySearchActivity"
             android:label="@string/title_activity_category_search"
@@ -68,6 +70,14 @@
             android:name=".InProgress"
             android:label="@string/title_activity_in_progress" >
         </activity>
+
+        <activity
+            android:name=".CategoryByStoresActivity"
+            android:label="@string/title_activity_categories_by_store"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+
     </application>
 
 </manifest>

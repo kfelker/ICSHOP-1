@@ -1,5 +1,6 @@
 package com.example.felker.icshop;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -29,11 +30,11 @@ public class CategorySearchActivity extends AppCompatActivity {
 
         list = (ListView) findViewById(R.id.list);
 
-        Spinner catSpinner = (Spinner)findViewById(R.id.MainCatSpinner);
+        Spinner catSpinner = (Spinner) findViewById(R.id.MainCatSpinner);
         db = new MyDatabase(this);
         mainCats = db.getAllMainCategories();
 
-        MainCategoryAdapter catAdapter= new MainCategoryAdapter(this,android.R.layout.simple_spinner_dropdown_item,mainCats);
+        MainCategoryAdapter catAdapter = new MainCategoryAdapter(this, android.R.layout.simple_spinner_dropdown_item, mainCats);
         catAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         catSpinner.setAdapter(catAdapter);
 
@@ -44,7 +45,7 @@ public class CategorySearchActivity extends AppCompatActivity {
 
                 MainRetailCategory selectedCat = (MainRetailCategory) arg0.getAdapter().getItem(arg2);
                 //Toast.makeText(getApplicationContext(), selectedCat.getDesc(),
-                       // Toast.LENGTH_LONG).show();
+                // Toast.LENGTH_LONG).show();
                 String CatID = String.valueOf(selectedCat.getID());
                 db = new MyDatabase(getApplicationContext());
                 subCats = db.getAllSubCategories(CatID);
@@ -52,21 +53,41 @@ public class CategorySearchActivity extends AppCompatActivity {
                 ArrayAdapter<SubRetailCategory> adapter = new ArrayAdapter<SubRetailCategory>(getApplicationContext(),
                         android.R.layout.simple_list_item_1, subCats);
 
-                String Cat = adapter.getItem(1).toString();
-
-                Toast.makeText(getApplicationContext(), Cat,
-                        Toast.LENGTH_LONG).show();
-
-                        list.setAdapter(adapter);
-                        adapter.notifyDataSetChanged();
+                list.setAdapter(adapter);
+                adapter.notifyDataSetChanged();
             }
+
 
             @Override
             public void onNothingSelected(AdapterView<?> arg0) {
 
             }
         });
-    }
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+
+                // selected item
+                SubRetailCategory clickedObject = (SubRetailCategory) parent.getAdapter().getItem(position);
+
+                String strid = String.valueOf(clickedObject.getID());
+                String strSubCatName = clickedObject.getDesc();
+                // Launching new Activity on selecting single List Item
+                ArrayAdapter<SubRetailCategory> adapter = new ArrayAdapter<SubRetailCategory>(getApplicationContext(),
+                        android.R.layout.simple_list_item_1, subCats);
+                //String Cat = adapter.getItem(2).toString();
+
+
+
+                Intent i = new Intent(getApplicationContext(), CategoryByStoresActivity.class);
+                // sending data to new activity
+                i.putExtra("SubRetailID", strid);
+                i.putExtra("SubCatName", strSubCatName);startActivity(i);
+
+            }
+        });
+}
 
 
     @Override
