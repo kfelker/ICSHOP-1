@@ -64,11 +64,13 @@
         </activity>
         <activity
             android:name=".StoreListActivity"
-            android:label="@string/title_activity_store_list" >
+            android:label="@string/title_activity_store_list"
+            android:parentActivityName=".MainActivity">
         </activity>
         <activity
             android:name=".InProgress"
-            android:label="@string/title_activity_in_progress" >
+            android:label="@string/title_activity_in_progress"
+                android:parentActivityName=".MainActivity">
         </activity>
 
         <activity
