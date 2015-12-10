@@ -25,10 +25,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, StoreListActivity.class));
             }
         });
+        findViewById(R.id.advancedSearchButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SearchActivity.class));
+            }
+        });
         findViewById(R.id.viewMapButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,InProgress.class));
+                startActivity(new Intent(MainActivity.this, InProgress.class));
             }
         });
         findViewById(R.id.shopByCategoryIdButton).setOnClickListener(new View.OnClickListener() {
@@ -58,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+
+
         return true;
     }
 

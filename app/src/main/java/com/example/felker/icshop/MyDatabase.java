@@ -53,6 +53,10 @@ public class MyDatabase extends SQLiteAssetHelper {
         return Brands;
     }
 
+
+
+
+
     public List<Store> getAllStores() {
 
         List<Store> Stores = new ArrayList<Store>();
@@ -76,6 +80,60 @@ public class MyDatabase extends SQLiteAssetHelper {
         c.close();
         return Stores;
     }
+
+
+    public List<SearchResultsObject> getSearchResults(String strSearchText, int searchType) {
+        String strSearch;
+        List<SearchResultsObject> searchDS = new ArrayList<SearchResultsObject>();
+        String sqlTables = "";
+        String[] sqlSelect = new String[3];
+        String []selectionArgs = new String [1];
+        String likeClause = "";
+
+        strSearch = strSearchText;
+        SQLiteDatabase db = getReadableDatabase();
+        SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
+
+        switch (searchType) {
+            case 1:
+                sqlTables = "Brand";
+                sqlSelect[0] = "0 _id";
+                sqlSelect[1] = "ID";
+                sqlSelect[2] = "Name";
+                selectionArgs[0] = "%" + strSearch + "%";
+                likeClause =  "Name LIKE ?";
+                break;
+            case 2:
+                sqlTables = "Business";
+                sqlSelect[0] = "0 _id";
+                sqlSelect[1] = "ID";
+                sqlSelect[2] = "BusinessName";
+                selectionArgs[0] = "%" + strSearch + "%";
+                likeClause =  "BusinessName LIKE ?";
+                break;
+        }
+        qb.setTables(sqlTables);
+        Cursor c = qb.query(db, sqlSelect, likeClause, selectionArgs,
+                null, null, null);
+
+        c.moveToFirst();
+        while (!c.isAfterLast()) {
+            SearchResultsObject ds = cursorToResults(c);
+            searchDS.add(ds);
+            c.moveToNext();
+        }
+        // make sure to close the cursor
+        c.close();
+        return searchDS;
+    }
+
+    private SearchResultsObject cursorToResults(Cursor cursor) {
+        SearchResultsObject ds = new SearchResultsObject();
+        ds.setID(cursor.getInt(1));
+        ds.setName(cursor.getString(2));
+        return ds;
+    }
+
 
     private Brand cursorToBrand(Cursor cursor) {
         Brand brand = new Brand();
